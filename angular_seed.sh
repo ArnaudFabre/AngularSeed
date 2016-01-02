@@ -15,7 +15,7 @@ echo "      <link rel='stylesheet' href='assets/style.css'>" >> index.html
 echo "      <script src='bower_components/angular/angular.js'></script>" >> index.html
 echo "      <script src='app.js'></script>" >> index.html
 echo "  </header>" >> index.html
-echo "  <body ng-congtroller='${1}Ctrl'>" >> index.html
+echo "  <body ng-controller='${1}Ctrl'>" >> index.html
 echo "  </body>" >> index.html
 echo "</html>" >> index.html
 
