@@ -1,5 +1,13 @@
-/bin/bash: eader : commande introuvable
+#!/bin/bash
 
+if [ $# -ne 1 ]
+then
+	echo "./angular_seed seed_name"
+	exit 1
+fi
+
+mkdir $1
+cd $1
 mkdir assets
 
 touch assets/style.css
@@ -25,3 +33,6 @@ echo "${1}App.controller('${1}Ctrl', function (\$scope) {" >> app.js
 echo "" >> app.js
 echo "});" >> app.js
 
+echo "Now run the following command:"
+echo "sudo npm install -g bower"
+echo "cd $1  && bower init && bower install -S angular"
